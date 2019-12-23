@@ -1,18 +1,33 @@
 defmodule RainbowInspector do
   @moduledoc """
-  Documentation for RainbowInspector.
+  Upgrade version of IO.inspect() that allows to specify outputs colour.
   """
+
+  @allowed_colours ~w(
+    black
+    blue
+    cyan
+    green
+    magenta
+    red
+    white
+    yellow
+    )a
 
   @doc """
-  Hello world.
+  Inspects `item` with given `font colour`.
 
-  ## Examples
-
-      iex> RainbowInspector.hello()
-      :world
-
+  Allowed font colours are :black, :blue, :cyan, :green, :magenta, :red, :white and :yellow.
   """
-  def hello do
-    :world
+  def colour_inspect(item, font_colour)
+
+  def colour_inspect(item, font_colour) when font_colour in @allowed_colours do
+    IO.puts(IO.ANSI.format([font_colour, inspect(item)]))
+    item
+  end
+
+  def colour_inspect(item, _font_colour) do
+    IO.ANSI.reset()
+    IO.inspect(item)
   end
 end
