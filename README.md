@@ -13,8 +13,7 @@ Allowed colours are: `:black`, `:blue`, `:cyan`, `:green`, `:magenta`, `:red`, `
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `rainbow_inspector` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `rainbow_inspector` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
