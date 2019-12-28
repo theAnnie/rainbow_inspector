@@ -14,8 +14,4 @@ def deps do
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/rainbow_inspector](https://hexdocs.pm/rainbow_inspector).
-
+After you've added Rainbow Inspector, you are ready to debug - with colors ;)
