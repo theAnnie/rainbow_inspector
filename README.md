@@ -27,5 +27,3 @@ After you've added Rainbow Inspector, you are ready to debug - with colors ;)
 
 ## Examples
 ![example1](assets/ex1.png)
-
-![example2](assets/ex2.png)
