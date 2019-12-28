@@ -22,4 +22,19 @@ defmodule RainbowInspector.MixProject do
       {:ex_doc, "~> 0.21.2"}
     ]
   end
+
+  defp package do
+    [
+      name: "rainbow_inspector",
+      licenses: ["MIT"],
+      description: description()
+    ]
+  end
+
+  defp description do
+    """
+    Rainbow Inspector is a small library that allows you to specify a color of
+    output given by inspect() function.
+    """
+  end
 end
