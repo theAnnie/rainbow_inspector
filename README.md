@@ -1,3 +1,5 @@
+![logo](assets/logo.png)
+
 # Rainbow Inspector
 
 Rainbow Inspector is a small library that allows you to specify a color of output given by inspect() function.
