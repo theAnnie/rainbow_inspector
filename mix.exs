@@ -7,7 +7,8 @@ defmodule RainbowInspector.MixProject do
       version: "0.1.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
@@ -27,6 +28,7 @@ defmodule RainbowInspector.MixProject do
     [
       name: "rainbow_inspector",
       licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/theAnnie/rainbow_inspector"},
       description: description()
     ]
   end
