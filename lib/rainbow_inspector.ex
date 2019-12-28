@@ -19,14 +19,14 @@ defmodule RainbowInspector do
 
   Allowed font colours are :black, :blue, :cyan, :green, :magenta, :red, :white and :yellow.
   """
-  def colour_inspect(item, font_colour)
+  def inspect(item, font_colour)
 
-  def colour_inspect(item, font_colour) when font_colour in @allowed_colours do
+  def inspect(item, font_colour) when font_colour in @allowed_colours do
     IO.puts(IO.ANSI.format([font_colour, inspect(item)]))
     item
   end
 
-  def colour_inspect(item, _font_colour) do
+  def inspect(item, _font_colour) do
     IO.ANSI.reset()
     IO.inspect(item)
   end
